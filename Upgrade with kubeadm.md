@@ -9,20 +9,23 @@ Drain the control plane node.
 
 ```
 kubectl drain <control plane node name> --ignore-daemonsets
-
+```
 Upgrade kubeadm.
 
-```sudo apt-get update && \
+```
+sudo apt-get update && \
 sudo apt-get install -y --allow-change-held-packages kubeadm=1.20.2-00
-
-```kubeadm version
+```
+kubeadm version
 ```
 Plan the upgrade.
 
-```sudo kubeadm upgrade plan v1.20.2
+```
+sudo kubeadm upgrade plan v1.20.2
+```
 Upgrade the control plane components.
 ```
-```sudo kubeadm upgrade apply v1.20.2
+sudo kubeadm upgrade apply v1.20.2
 ```
 Upgrade kubelet and kubectl on the control plane node.
 
