@@ -11,7 +11,8 @@ kubectl drain <control plane node name> --ignore-daemonsets
 Upgrade kubeadm.
 
 ```sudo apt-get update && \
-sudo apt-get install -y --allow-change-held-packages kubeadm=1.20.2-00```
+sudo apt-get install -y --allow-change-held-packages kubeadm=1.20.2-00
+```
 
 kubeadm version
 Plan the upgrade.
