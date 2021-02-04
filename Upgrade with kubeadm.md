@@ -7,7 +7,8 @@ First, upgrade the control plane node.
 
 Drain the control plane node.
 
-```kubectl drain <control plane node name> --ignore-daemonsets
+```
+kubectl drain <control plane node name> --ignore-daemonsets
 
 Upgrade kubeadm.
 
