@@ -8,12 +8,11 @@ First, upgrade the control plane node.
 Drain the control plane node.
 
 ```kubectl drain <control plane node name> --ignore-daemonsets
-```
+
 Upgrade kubeadm.
 
 ```sudo apt-get update && \
 sudo apt-get install -y --allow-change-held-packages kubeadm=1.20.2-00
-```
 
 ```kubeadm version
 ```
@@ -32,8 +31,7 @@ sudo apt-get install -y --allow-change-held-packages kubelet=1.20.2-00 kubectl=1
 Restart kubelet.
 
 ```sudo systemctl daemon-reload
-```
-```sudo systemctl restart kubelet
+sudo systemctl restart kubelet
 ```
 Uncordon the control plane node.
 
